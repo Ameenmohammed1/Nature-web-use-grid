@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 90vh 100vh 50px;
+}
+
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(88, 209, 142);
+    display: flex;
+   padding-left: 50px;
+   padding-bottom: 20px;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 35px;
+}
+.nav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(88, 209, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    color: white;
+    font-size: 22px;
+}
+
+.main{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: red;
+    padding: 100px;
+}
+
+.main h1{
+    font-size: 35px;
+    color: #fff;
+    margin-bottom:30px; 
+}
+
+.main p{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+
+
+
+.main-img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: blueviolet;
+}
+
+.main-img {
+    background: url(./cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background:url(./img\(11\).webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.about-img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: beige;
+    padding: 100px;
+}
+
+.about-img h1{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin-bottom:30px; 
+}
+
+.about-img p{
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn p{
+    color: #fff;
+}
+
+@media (max-width:720px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 10vh  40vh 0.5fr  40vh  0.5fr 50px  ;
+    }
+
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: rgb(88, 209, 142);
+        display: flex;
+       padding-left: 50px;
+       padding-bottom: 20px;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .nav{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(88, 209, 142);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .main-img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: blueviolet;
+    }
+
+    .main{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background: red;
+        padding: 100px;
+    }
+
+    .about-img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        background-color: beige;
+        padding: 100px;
+    }
+
+    .about{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background:url(./img\(11\).webp);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .about{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        background:url(./img\(11\).webp);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .btn{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+
+    
+}
